@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R-2 App - Download APK</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 50px;
+            max-width: 500px;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        
+        .info-box {
+            background: #f0f4ff;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            text-align: left;
+        }
+        
+        .info-box p {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .download-section {
+            margin-bottom: 30px;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            width: 100%;
+            padding: 15px 30px;
+            margin-bottom: 12px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-debug {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .btn-debug:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-release {
+            background: #f0f0f0;
+            color: #333;
+            border: 2px solid #667eea;
+        }
+        
+        .btn-release:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-actions {
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+        
+        .btn-actions:hover {
+            background: #555;
+        }
+        
+        .features {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        
+        .features h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .features ul {
+            list-style: none;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .features li {
+            padding: 5px 0;
+        }
+        
+        .features li:before {
+            content: "✓ ";
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        .footer {
+            color: #999;
+            font-size: 12px;
+            margin-top: 20px;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+        
+        .status {
+            display: inline-block;
+            background: #4caf50;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">📱</div>
+        <div class="status">✓ Build Disponível</div>
+        <h1>R-2 App</h1>
+        <p class="subtitle">Seu app Android está pronto para download</p>
+        
+        <div class="info-box">
+            <p><strong>ℹ️ Como Instalar:</strong></p>
+            <p>1. Baixe o APK abaixo</p>
+            <p>2. Transfira para seu celular Android</p>
+            <p>3. Abra o gerenciador de arquivos e toque no APK</p>
+            <p>4. Clique em "Instalar"</p>
+        </div>
+        
+        <div class="features">
+            <h3>Recursos:</h3>
+            <ul>
+                <li>Desenvolvido em Kotlin</li>
+                <li>Interface com Jetpack Compose</li>
+                <li>Design Material 3</li>
+                <li>API 24+ (Android 7.0+)</li>
+            </ul>
+        </div>
+        
+        <div class="download-section">
+            <p style="color: #666; font-size: 14px; margin-bottom: 15px;">
+                <strong>Versão:</strong> 1.0 | <strong>Tamanho:</strong> ~5MB
+            </p>
+            
+            <a href="https://github.com/marcioventurelli-rgb/R-2/actions" class="download-btn btn-debug">
+                📥 Baixar APK Debug
+            </a>
+            
+            <a href="https://github.com/marcioventurelli-rgb/R-2/actions" class="download-btn btn-release">
+                📦 Baixar APK Release
+            </a>
+            
+            <a href="https://github.com/marcioventurelli-rgb/R-2/actions" class="download-btn btn-actions">
+                🔄 Ver Builds (GitHub Actions)
+            </a>
+        </div>
+        
+        <div class="footer">
+            <p>Última atualização: 14 de Agosto de 2026</p>
+            <p><a href="https://github.com/marcioventurelli-rgb/R-2" style="color: #667eea; text-decoration: none;">Ver no GitHub →</a></p>
+        </div>
+    </div>
+</body>
+</html>
